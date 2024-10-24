@@ -1,0 +1,59 @@
+### Create An Author
+POST http://localhost:8080/authors
+Content-Type: application/json
+
+{
+  "name": "Stephen King"
+}
+
+### Get All Authors
+GET http://localhost:8080/authors
+Content-Type: application/json
+
+### Get A Soecific Author
+GET http://localhost:8080/authors/3
+Content-Type: application/json
+
+### Update An Author
+PUT http://localhost:8080/authors/2
+Content-Type: application/json
+
+{
+  "name": "Ken Follet"
+}
+
+### Delete An Author
+DELETE http://localhost:8080/authors/3
+Content-Type: application/json
+
+### Create An Author
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+  "title": "The Stand",
+  "isbn": "978-23322333",
+  "author_id": 1
+}
+
+### Get All Books
+GET http://localhost:8080/books
+Content-Type: application/json
+
+### Get A Specific Book
+GET http://localhost:8080/books/3
+Content-Type: application/json
+
+### Update A Book
+PUT http://localhost:8080/books/5
+Content-Type: application/json
+
+{
+  "title": "The Stand",
+  "isbn": "978-23322225",
+  "author_id": 5
+}
+
+### Delete A Book
+DELETE http://localhost:8080/books/5
+Content-Type: application/json
